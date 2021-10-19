@@ -26,7 +26,10 @@
 		"source": "https://github.com/codekandis/tiphy-ldap-integration/tree/master"
 	},
 	"require": {
-		"php": "^7.4"
+		"php": "^7.4",
+		"codekandis/configurations": "^0",
+		"codekandis/ldap": "^0",
+		"codekandis/tiphy": "^0"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-master",
