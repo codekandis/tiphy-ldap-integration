@@ -24,7 +24,7 @@ class LdapConfiguration extends AbstractConfiguration implements LdapConfigurati
 	 */
 	public function getServerPort(): int
 	{
-		return $this->readOrDefault( 'serverPort', 389 );
+		return $this->readOrDefault( 389, 'serverPort' );
 	}
 
 	/**
@@ -40,7 +40,7 @@ class LdapConfiguration extends AbstractConfiguration implements LdapConfigurati
 	 */
 	public function getProtocolVersion(): int
 	{
-		return $this->readOrDefault( 'protocolVersion', 3 );
+		return $this->readOrDefault( 3, 'protocolVersion' );
 	}
 
 	/**
@@ -48,6 +48,6 @@ class LdapConfiguration extends AbstractConfiguration implements LdapConfigurati
 	 */
 	public function getAdditionalOptions(): array
 	{
-		return $this->readOrDefault( 'additionalOptions', [] );
+		return $this->readOrDefault( [], 'additionalOptions' );
 	}
 }
